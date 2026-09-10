@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vietnam × Taiwan | My Journey</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="#home" class="logo">
+        <span>🌸 VN</span>
+        <b>×</b>
+        <span>TW 🏮</span>
+    </a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#vietnam">Vietnam</a>
+        <a href="#taiwan">Taiwan</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-image"></div>
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+            MY CULTURAL JOURNEY
+        </div>
+
+        <h1>
+            越南 × 台灣
+        </h1>
+
+        <h2>
+            關於我在越南與台灣的<br>
+            生活與飲食
+        </h2>
+
+        <p>
+            分享我的家鄉越南同塔，
+            以及在台灣學習、生活與品嚐美食的旅程。
+        </p>
+
+        <div class="hero-buttons">
+
+            <button class="btn primary"
+                    onclick="speak(homeText)">
+                🔊 播放介紹
+            </button>
+
+            <button class="btn outline"
+                    onclick="playAll()">
+                🎧 Play All
+            </button>
+
+        </div>
+
+        <div class="published">
+            Published · 09 September 2026
+        </div>
+
+    </div>
+
+    <div class="scroll-down">
+        SCROLL ↓
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section">
+
+    <div class="section-heading reveal">
+
+        <span>01 · ABOUT ME</span>
+
+        <h2>
+            認識我
+        </h2>
+
+    </div>
+
+
+    <div class="about-container reveal">
+
+        <div class="about-photo">
+
+            <img src="images/me.jpg" alt="My Photo">
+
+            <div class="photo-tag">
+                ✦ Yang Yanyu ✦
+            </div>
+
+        </div>
+
+
+        <div class="about-text">
+
+            <div class="mini-title">
+                HELLO, I'M
+            </div>
+
+            <h3>
+                阮燕玉
+            </h3>
+
+            <p>
+                我是楊燕玉，我19歲，越南人，我是南越人，我的家鄉在同塔。
+            </p>
+
+            <p>
+                我來台灣6個月了，我是來台灣讀書的，不上課的時候，我常常去夜市，我覺得很開心。
+            </p>
+
+            <p>
+                來台灣以後，我覺得天氣最不一樣。
+            </p>
+
+            <p>
+                最近有一件讓我很高興的事情是認識很多新朋友。
+            </p>
+
+            
+
+            <button class="btn primary"
+                    onclick="speak(aboutText)">
+                🔊 播放語音
+            </button>
+
+        </div>
+
+    </div>
+    <div class="stats">
+
+    <div>
+        <h3>19</h3>
+        <p>Years Old</p>
+    </div>
+
+    <div>
+        <h3>6</h3>
+        <p>Months in Taiwan</p>
+    </div>
+
+    <div>
+        <h3>2</h3>
+        <p>Countries</p>
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= VIETNAM ================= -->
+
+<section id="vietnam" class="section country-section">
+
+    <div class="section-heading reveal">
+
+        <span>02 · VIETNAM</span>
+
+        <h2>
+            我的家鄉 · 同塔
+        </h2>
+
+        <p>
+            My hometown, my memories.
+        </p>
+
+    </div>
+
+
+    <div class="country-container vietnam reveal">
+
+        <div class="country-image">
+
+            <img src="images/dong-thap.jpg"
+                 alt="Dong Thap">
+
+            <div class="country-badge">
+                🇻🇳 VIETNAM
+            </div>
+
+        </div>
+
+
+        <div class="country-info">
+
+            <div class="mini-title">
+                MY HOMETOWN
+            </div>
+
+            <h3>
+                同塔 Dong Thap
+            </h3>
+
+            <p>
+                同塔是我的家鄉，
+                這裡以無邊無際的荷花池和
+                水鄉澤國的平靜生活步調而聞名。
+            </p>
+
+            <p class="food-hint">
+                ✦ 點擊下面的美食卡片查看介紹
+            </p>
+
+
+            <div class="food-grid">
+
+
+                <button class="food-card"
+                    onclick="openFood(
+                    '沙瀝粿條',
+                    '沙瀝粿條是同塔著名的特色料理，湯頭清甜，口感滑順，非常受歡迎。',
+                    'images/hu-tieu-sa-dec.jpg'
+                    )">
+
+                    <span class="food-icon">🍜</span>
+
+                    <span>
+                        <strong>沙瀝粿條</strong>
+                        <small>Sa Đéc Noodles</small>
+                    </span>
+
+                    <b>↗</b>
+
+                </button>
+
+
+                <button class="food-card"
+                    onclick="openFood(
+                    '荷花料理',
+                    '同塔盛產荷花，因此有許多利用蓮花、蓮子和蓮藕製作的特色料理。',
+                    'images/lotus-food.jpg'
+                    )">
+
+                    <span class="food-icon">🌸</span>
+
+                    <span>
+                        <strong>荷花料理</strong>
+                        <small>Lotus Cuisine</small>
+                    </span>
+
+                    <b>↗</b>
+
+                </button>
+
+
+                <button class="food-card"
+                    onclick="openFood(
+                    '來威酸肉',
+                    '來威酸肉酸香開胃，是同塔非常有名的傳統美食。',
+                    'images/nem-lai-vung.jpg'
+                    )">
+
+                    <span class="food-icon">🥩</span>
+
+                    <span>
+                        <strong>來威酸肉</strong>
+                        <small>Lai Vung Sour Pork</small>
+                    </span>
+
+                    <b>↗</b>
+
+                </button>
+
+
+                <button class="food-card"
+                    onclick="openFood(
+                    '沙瀝蝦餅',
+                    '沙瀝蝦餅外酥內嫩，是沙瀝非常受歡迎的特色小吃。',
+                    'images/banh-phong-tom-sa-dec.jpg'
+                    )">
+
+                    <span class="food-icon">🦐</span>
+
+                    <span>
+                        <strong>沙瀝蝦餅</strong>
+                        <small>Sa Đéc Shrimp Cake</small>
+                    </span>
+
+                    <b>↗</b>
+
+                </button>
+
+            </div>
+            <!-- ===== Vietnam Gallery ===== -->
+
+<div class="gallery-section">
+
+    <div class="gallery-title">
+        📸 越南生活相簿
+    </div>
+
+    <div class="gallery">
+
+        <img src="images/flower-village.jpg" alt="Flower Village">
+
+        <img src="images/boat-lotus.jpg" alt="Lotus Boat">
+
+        <img src="images/countryside.jpg" alt="Countryside">
+
+        <img src="images/sunset-lotus.jpg" alt="Lotus Sunset">
+
+    </div>
+
+</div>
+
+
+            <button class="btn primary"
+                    onclick="speak(vnText)">
+                🔊 播放越南介紹
+            </button>
+
+        </div>
+
+    </div>
+    
+
+</section>
+
+
+<!-- ================= TAIWAN ================= -->
+
+<section id="taiwan" class="section country-section">
+
+    <div class="section-heading reveal">
+
+        <span>03 · TAIWAN</span>
+
+        <h2>
+            我的台灣生活
+        </h2>
+
+        <p>
+            A new place, a new journey.
+        </p>
+
+    </div>
+
+
+    <div class="country-container taiwan reveal">
+
+
+        <div class="country-info">
+
+            <div class="mini-title">
+                MY NEW JOURNEY
+            </div>
+
+            <h3>
+                台灣 Taiwan
+            </h3>
+
+            <p>
+                這是我在台灣學習與體驗新文化的旅程，
+                包含每天上課的點滴，
+                以及平時探索街巷的時光。
+            </p>
+
+            <p class="food-hint">
+                ✦ 點擊下面的美食卡片查看介紹
+            </p>
+
+
+            <div class="food-grid">
+
+
+                <button class="food-card"
+                    onclick="openFood(
+                    '珍珠奶茶',
+                    '珍珠奶茶是台灣最具代表性的飲料，Q彈的珍珠搭配香濃的奶茶，非常受歡迎。',
+                    'images/bubble-tea.jpg'
+                    )">
+
+                    <span class="food-icon">🧋</span>
+
+                    <span>
+                        <strong>珍珠奶茶</strong>
+                        <small>Bubble Tea</small>
+                    </span>
+
+                    <b>↗</b>
+
+                </button>
+
+
+                <button class="food-card"
+                    onclick="openFood(
+                    '牛肉麵',
+                    '牛肉麵是台灣非常受歡迎的傳統料理，牛肉軟嫩，湯頭香濃。',
+                    'images/beef-noodle.jpg'
+                    )">
+
+                    <span class="food-icon">🍜</span>
+
+                    <span>
+                        <strong>牛肉麵</strong>
+                        <small>Beef Noodle Soup</small>
+                    </span>
+
+                    <b>↗</b>
+
+                </button>
+
+
+                <button class="food-card"
+                    onclick="openFood(
+                    '臭豆腐',
+                    '臭豆腐雖然味道比較特別，但是外酥內嫩，是台灣夜市的經典小吃。',
+                    'images/stinky-tofu.jpg'
+                    )">
+
+                    <span class="food-icon">🧀</span>
+
+                    <span>
+                        <strong>臭豆腐</strong>
+                        <small>Stinky Tofu</small>
+                    </span>
+
+                    <b>↗</b>
+
+                </button>
+
+
+                <button class="food-card"
+                    onclick="openFood(
+                    '大雞排',
+                    '大雞排是台灣夜市非常受歡迎的炸物，外皮香酥，雞肉多汁。',
+                    'images/chicken-cutlet.jpg'
+                    )">
+
+                    <span class="food-icon">🍗</span>
+
+                    <span>
+                        <strong>大雞排</strong>
+                        <small>Chicken Cutlet</small>
+                    </span>
+
+                    <b>↗</b>
+
+                </button>
+
+
+                <button class="food-card"
+                    onclick="openFood(
+                    '小籠包',
+                    '小籠包皮薄湯多，是台灣非常有名的特色點心。',
+                    'images/xiaolongbao.jpg'
+                    )">
+
+                    <span class="food-icon">🥟</span>
+
+                    <span>
+                        <strong>小籠包</strong>
+                        <small>Xiao Long Bao</small>
+                    </span>
+
+                    <b>↗</b>
+
+                </button>
+
+            </div>
+            <!-- ===== Taiwan Gallery ===== -->
+
+<div class="gallery-section">
+
+    <div class="gallery-title">
+        📸 台灣生活相簿
+    </div>
+
+    <div class="gallery">
+
+        <img src="images/taipei.jpg" alt="Taipei 101">
+
+        <img src="images/jiufen.jpg" alt="Jiufen">
+
+        <img src="images/night-market.jpg" alt="Night Market">
+
+        <img src="images/bubble-tea.jpg" alt="Bubble Tea">
+
+        <img src="images/taiwan-street.jpg" alt="Taiwan Street">
+
+        <img src="images/temple.jpg" alt="Taiwan Temple">
+
+    </div>
+
+</div>
+
+
+            <div class="feeling">
+
+                <span>MY FEELING</span>
+
+                <p>
+                    對我來說，台灣的食物口味比較清淡、
+                    油分也稍微多一點，
+                    但不管是哪個國家的美食，
+                    都各有特色的好吃！
+                </p>
+
+            </div>
+
+
+            <button class="btn primary"
+                    onclick="speak(twText)">
+                🔊 播放台灣介紹
+            </button>
+
+        </div>
+
+
+        <div class="country-image">
+
+            <img src="images/taipei.jpg"
+                 alt="Taiwan">
+
+            <div class="country-badge">
+                🇹🇼 TAIWAN
+            </div>
+
+        </div>
+
+    </div>
+    
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="section">
+
+    <div class="section-heading reveal">
+
+        <span>04 · CONTACT</span>
+
+        <h2>
+            聯絡我
+        </h2>
+
+        <p>
+            Let's keep in touch.
+        </p>
+
+    </div>
+
+
+    <div class="contact-container reveal">
+
+
+       <div class="contact-info">
+
+    <div class="mini-title">
+        SAY HELLO
+    </div>
+
+    <h3>
+        很高興認識你！
+    </h3>
+
+    <p>
+        如果你想和我分享你的故事，
+        歡迎留下訊息。
+    </p>
+
+    <!-- Contact Info -->
+
+    <div class="contact-list">
+
+        <div class="contact-item">
+            📍 Currently in Taiwan
+        </div>
+
+        <div class="contact-item">
+            📧 Contact me by message
+        </div>
+
+        <div class="contact-item">
+            💬 LINE: yyan.yu207
+        </div>
+
+        <div class="contact-item">
+            🌸 Thank you for visiting!
+        </div>
+
+    </div>
+
+    <div class="line-box">
+
+        <span>LINE ID</span>
+
+        <strong> yyan.yu207</strong>
+
+    </div>
+
+           
+
+        </div>
+
+
+        <form id="contactForm">
+
+
+            <label>
+                Name
+                <input type="text"
+                       placeholder="請輸入你的名字"
+                       required>
+            </label>
+
+
+            <label>
+                📧 Email
+                <input type="email"
+                       placeholder="請輸入 Email"
+                       required>
+            </label>
+
+
+            <label>
+                💬 Message
+                <textarea
+                    placeholder="想對我說什麼呢？"
+                    required></textarea>
+            </label>
+
+
+            <button type="submit"
+                    class="btn primary">
+                ✈️ Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOD POPUP ================= -->
+
+<div id="foodModal" class="modal">
+
+    <div class="modal-box">
+
+        <button class="modal-close"
+                onclick="closeFood()">
+            ×
+        </button>
+
+
+        <img id="foodImg"
+             src=""
+             alt="Food">
+
+
+        <div class="modal-body">
+
+            <span class="modal-label">
+                FOOD · 美食
+            </span>
+
+            <h2 id="foodTitle">
+                Food
+            </h2>
+
+            <p id="foodDesc">
+                Description
+            </p>
+
+            <button class="btn primary"
+                    onclick="speak(foodCurrent)">
+                🔊 播放介紹
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= TOP BUTTON ================= -->
+
+<button id="topButton"
+        onclick="window.scrollTo({
+            top:0,
+            behavior:'smooth'
+        })">
+    ↑
+</button>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        🇻🇳 × 🇹🇼
+    </div>
+
+    <h3>
+        My Cultural Journey
+    </h3>
+
+    <p>
+        我的越南與台灣生活旅程
+    </p>
+
+    <div class="footer-line"></div>
+
+    <p class="thanks">
+        感謝各位老師和同學聆聽我的簡報！
+    </p>
+
+    <small>
+        © 2026 Vietnam × Taiwan Portfolio
+    </small>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
